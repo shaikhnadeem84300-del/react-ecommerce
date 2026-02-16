@@ -33,7 +33,10 @@ const ShopCategory = ({ category, banner }) => {
             <div key={product.id} className="product-card">
               <img src={product.image} alt={product.name} />
               <h3>{product.name}</h3>
-              <p>${product.price}</p>
+              <div className="product-prices">
+                <span className="new-price">${product.new_price}</span>
+                {product.old_price && <span className="old-price">${product.old_price}</span>}
+              </div>
 
               <div className="cart-controls">
                 {getQuantity(product.id) > 0 && (

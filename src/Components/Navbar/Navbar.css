@@ -1,8 +1,12 @@
 .navbar{
     display: flex;
     justify-content: space-around;
-    padding: 16px ;
+    padding: 16px;
     box-shadow: 0 1px 3px -2px black;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
 }
 
 .nav-logo{
@@ -13,7 +17,7 @@
 
 .nav-logo p{
     color: #171717;
-    font-size: 38px;
+    font-size: 28px;
     font-weight: 600;
 
 }
@@ -22,9 +26,9 @@
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 50px;
+    gap: 40px;
     color: #626262;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -35,6 +39,11 @@
     justify-content: center;
     gap: 3px;
     cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li:hover{
+    color: #ff4141;
 }
 
 .nav-menu hr{
@@ -48,20 +57,29 @@
 .nav-login-cart {
     display: flex;
     align-items: center;
-    gap: 45px;
+    gap: 35px;
 }
 
 .nav-login-cart button{
-    width: 157px;
-    height: 58px;
+    width: 120px;
+    height: 45px;
     outline: none;
     border: 1px solid #7a7a7a;
     border-radius: 75px;
     color: #515151;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     background: white;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-login-cart button:hover{
+    background: #ff4141;
+    color: white;
+    border-color: #ff4141;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 65, 65, 0.3);
 }
 
 .nav-login-cart button:active{

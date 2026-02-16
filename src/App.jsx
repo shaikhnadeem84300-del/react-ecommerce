@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Shop from "./Pages/Shop";
 import ShopCategory from "./Pages/ShopCategory";
@@ -51,6 +51,7 @@ function App() {
               <Route path="/cart" element={<Cart />} />
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/login" element={<LoginSinup />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
 
             <Footer />

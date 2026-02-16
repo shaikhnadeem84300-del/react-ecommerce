@@ -64,6 +64,7 @@
 .shop-category-container {
   padding: 40px 80px;
   background-color: #f9f9f9;
+  min-height: 100vh;
 }
 
 /* Banner image */
@@ -154,4 +155,24 @@
   text-align: center;
   color: #888;
   margin-top: 50px;
+}
+
+/* Price display */
+.product-prices {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.product-prices .new-price {
+  color: #ff4141;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.product-prices .old-price {
+  color: #8c8c8c;
+  font-size: 14px;
+  text-decoration: line-through;
 }

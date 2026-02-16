@@ -8,3 +8,8 @@
     margin: 60px 170px;
     text-transform: capitalize;
 }
+
+.breadcrum img{
+    width: 20px;
+    height: 20px;
+}
